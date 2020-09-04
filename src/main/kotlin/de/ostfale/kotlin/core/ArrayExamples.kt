@@ -18,7 +18,6 @@ class ArrayExamples {
 
     private val log = LoggerFactory.getLogger(javaClass)
 
-
     fun initArray() {
         val myArray = arrayOf(1, 2, 3)
         log.info("Print array: ${myArray.contentToString()}")

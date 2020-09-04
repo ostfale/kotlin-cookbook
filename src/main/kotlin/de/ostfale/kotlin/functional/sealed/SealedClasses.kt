@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.functional
+package de.ostfale.kotlin.functional.sealed
 
 /**
  *  Creating a sealed class is as easy as adding the sealed modifier to the class. All derived classes of the sealed
