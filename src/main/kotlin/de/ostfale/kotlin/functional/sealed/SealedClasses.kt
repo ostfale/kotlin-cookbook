@@ -5,7 +5,8 @@ package de.ostfale.kotlin.functional.sealed
  *  class must be nested (Kotlin 1.1) or on the same file (beyond Kotlin 1.1)
  * <br>
  * <ul>
- *    <li>https://medium.com/tompee/idiomatic-kotlin-sealed-classes-bf1772d9d607 </li>
+ *    <li>https://medium.com/tompee/idiomatic-kotlin-sealed-classes-bf1772d9d607</li>
+ *    <li>https://www.lordcodes.com/articles/the-power-of-sealed-classes-in-kotlin</li>
  * </ul>
  */
 
@@ -27,3 +28,4 @@ fun getAttributeString(attribute: Attribute): String {
 fun main() {
     println(getAttributeString(Agility))
 }
+
