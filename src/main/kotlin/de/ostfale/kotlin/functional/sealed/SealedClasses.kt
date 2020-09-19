@@ -7,6 +7,7 @@ package de.ostfale.kotlin.functional.sealed
  * <ul>
  *    <li>https://medium.com/tompee/idiomatic-kotlin-sealed-classes-bf1772d9d607</li>
  *    <li>https://www.lordcodes.com/articles/the-power-of-sealed-classes-in-kotlin</li>
+ *    <li>https://medium.com/kayvan-kaseb/kotlin-sealed-classes-94b93e18108a</li>
  * </ul>
  */
 
@@ -29,3 +30,8 @@ fun main() {
     println(getAttributeString(Agility))
 }
 
+
+sealed class Outcome<out T : Any> {
+    data class Success<out T : Any>(val data: T) : Outcome<T>()
+    data class Error(val exception: Exception) : Outcome<Nothing>()
+}
