@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.classes.enumsealed
+package de.ostfale.kotlin.classes.enums
 
 import org.slf4j.LoggerFactory
 
