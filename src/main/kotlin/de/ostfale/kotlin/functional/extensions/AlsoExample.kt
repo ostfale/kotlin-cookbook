@@ -1,5 +1,10 @@
 package de.ostfale.kotlin.functional.extensions
 
+import de.ostfale.kotlin.functional.extensions.scope.Bundle
+import de.ostfale.kotlin.functional.extensions.scope.Notification
+import de.ostfale.kotlin.functional.extensions.scope.putInt
+import de.ostfale.kotlin.functional.extensions.scope.putString
+
 /**
  * Use ‘also’ for executing side-effects on objects
  *

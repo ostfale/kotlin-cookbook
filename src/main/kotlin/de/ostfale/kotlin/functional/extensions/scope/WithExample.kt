@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.functional.extensions
+package de.ostfale.kotlin.functional.extensions.scope
 
 /**
  * Use ‘with’ to avoid writing the same receiver over and over again

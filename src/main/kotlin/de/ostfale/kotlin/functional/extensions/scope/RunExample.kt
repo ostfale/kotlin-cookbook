@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.functional.extensions
+package de.ostfale.kotlin.functional.extensions.scope
 
 /**
  * Use ‘run’ for transforming objects

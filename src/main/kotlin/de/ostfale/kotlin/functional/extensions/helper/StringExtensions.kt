@@ -15,13 +15,20 @@ fun main() {
     testCreditCardFormatedString()
 }
 
+fun String?.checkIsNullOrEmpty(): Boolean {
+    return !this.isNullOrEmpty() && !this.equals("null", ignoreCase = true)
+}
 
 fun String.isEmailValid(): Boolean {
-    val expression = "^[\\w.-]+@([\\w\\-]+\\.)+[A-Z]{2,8}$"
-    val pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE)
-    val matcher = pattern.matcher(this)
-    return matcher.matches()
+    return EMAIL_ADDRESS_PATTERN.matcher(this).matches()
 }
+
+val EMAIL_ADDRESS_PATTERN: Pattern = Pattern
+    .compile(
+        "[a-zA-Z0-9\\+\\.\\_\\%\\-\\+]{1,256}" + "\\@"
+                + "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,64}" + "(" + "\\."
+                + "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25}" + ")+", Pattern.CASE_INSENSITIVE
+    )
 
 fun emailTest() {
     val validEmail = "test@email.com"

@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.functional.extensions
+package de.ostfale.kotlin.functional.extensions.scope
 
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
