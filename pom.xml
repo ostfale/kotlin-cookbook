@@ -33,6 +33,29 @@
         <testSourceDirectory>src/test/kotlin</testSourceDirectory>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>3.0.0-M3</version>
+                <executions>
+                    <execution>
+                        <id>enforce-env-requirements</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireJavaVersion>
+                                    <version>[1.9,)</version>
+                                </requireJavaVersion>
+                                <requireMavenVersion>
+                                    <version>[3.6,)</version>
+                                </requireMavenVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-maven-plugin</artifactId>
                 <version>${kotlin.version}</version>
@@ -54,22 +77,13 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-enforcer-plugin</artifactId>
-                <version>3.0.0-M3</version>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.7</version>
                 <configuration>
-                    <rules>
-                        <!-- multiple deps of the artifact in pom defined -->
-                        <banDuplicatePomDependencyVersions/>
-                        <!-- version conflict -->
-                        <dependencyConvergence/>
-                        <requireMavenVersion>
-                            <version>3.6.3</version>
-                        </requireMavenVersion>
-                    </rules>
+                    <generateBackupPoms>false</generateBackupPoms>
                 </configuration>
-            </plugin>
-        </plugins>
+            </plugin></plugins>
     </build>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.arrow-kt/arrow-core -->
