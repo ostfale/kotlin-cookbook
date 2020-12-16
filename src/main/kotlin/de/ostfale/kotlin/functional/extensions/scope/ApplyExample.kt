@@ -8,6 +8,7 @@ package de.ostfale.kotlin.functional.extensions.scope
  *
  * <ul>
  *     <li>https://medium.com/the-kotlin-chronicle/lets-also-apply-a-run-with-kotlin-on-our-minds-56f12eaef5e3</li>
+ *     <li>https://kotlin.christmas/2020/3</li>
  * </ul>
  */
 
