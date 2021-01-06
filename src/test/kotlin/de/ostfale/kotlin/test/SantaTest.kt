@@ -1,6 +1,7 @@
 package de.ostfale.kotlin.test
 
 import io.mockk.*
+import org.junit.jupiter.api.Assertions.assertThrows
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
@@ -89,7 +90,19 @@ internal class SantaTest {
         verify { santaMock.functionReturningUnit() }
     }
 
+    @Test
+    @DisplayName("Check an expected exception")
+    internal fun testThrowingException() {
+        // when
+        val santaMock: Santa = mockk {
+            every { laugh(more(9000)) } throws LaughTooHardException("Ridiculous, no one laughs for this long.")
+        }
+        // then
+        assertThrows(LaughTooHardException::class.java) {
+            santaMock.laugh(9001)
+        }
+    }
 
 }
 
-class LoughTooHardException : RuntimeException()
+class LaughTooHardException(s: String) : RuntimeException()
