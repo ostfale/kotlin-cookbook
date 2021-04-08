@@ -7,6 +7,21 @@ fun main() {
         baseNull()
         nullAsPossibleArg()
     }
+    simpleNullOperations()
+}
+
+fun simpleNullOperations() {
+    val a: Int? = 3
+    val b: Int? = null
+    val c = a!! // c = Int
+    println("c = $c")
+
+    // elvis
+    println(a ?: -1)
+    println(b ?: -1)
+
+    val d = b!! // exception
+    println("d = $d")
 }
 
 class NullReferences {

@@ -6,6 +6,15 @@ class BasicLists {
 
     private val log = LoggerFactory.getLogger(javaClass)
 
+    fun simpleLists() {
+        val lst1 = listOf(1, 2, 3)
+        val lst2 = listOf(5, 6, 7, 8)
+        val lst3 = lst1 + lst2 + lst1
+        val lst4 = lst3 - lst1
+        log.debug("Sum of lst1 + lst2 + lst1 =  $lst3")
+        log.debug("Diff lst3 - lst1 = $lst4")
+    }
+
     fun printListItems(shoppingList: List<String>) {
         if (shoppingList.isNotEmpty()) {
             log.info("List first item: ${shoppingList[0]}")
@@ -32,6 +41,7 @@ fun main() {
     val shoppingList = listOf("Tea", "Eggs", "Milk")
 
     val myListClass = BasicLists()
+    myListClass.simpleLists()
     myListClass.printListItems(shoppingList)
     myListClass.findObjectInList(listWithType)
 }

@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.core
+package de.ostfale.kotlin.core.loops
 
 import org.slf4j.LoggerFactory
 
@@ -111,6 +111,7 @@ class LoopsExamples {
         for (i in intRange) println(i)
         for (n in stepRange) println(n)
         for (n1 in stepThree) println(n1)
+        for (n2 in reversedRange) println(n2)
 
         val str = "Hello"
         for (c in str) println(c)
@@ -118,7 +119,5 @@ class LoopsExamples {
         for (num in 1..20 step 4) println(num)
         for (i in 20 downTo 10 step 5) println(i)
         for (i in 1 until 10) println(i) // 1 - 9
-
-        val s = "goodbye"
     }
 }
