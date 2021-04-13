@@ -21,7 +21,7 @@ fun main() {
     println("Date time from current instance: $instDateTime")
     println("Date from current instance: $instDate")
     println("Time from current instance: $instTime")
-    println("++++ Formatting +++++")
+    println("\n++++ Formatting +++++")
     println("Format style medium: ${instDateTime.format(DateTimeFormatter.ofLocalizedTime(FormatStyle.MEDIUM))}")
     println("Format style full: ${instDateTime.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))}")
     println(
