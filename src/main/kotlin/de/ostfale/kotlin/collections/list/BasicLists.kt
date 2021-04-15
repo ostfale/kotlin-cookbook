@@ -13,6 +13,15 @@ class BasicLists {
         val lst4 = lst3 - lst1
         log.debug("Sum of lst1 + lst2 + lst1 =  $lst3")
         log.debug("Diff lst3 - lst1 = $lst4")
+        val mList1 = lst1.toMutableList()
+        println("List to mutable list: $mList1")
+
+        val mList = mutableListOf<Int>()  // empty list
+        mList.add(1)
+        mList.addAll(listOf(2, 3, 4, 5))
+        println(mList)
+        mList.removeAt(0)
+        println(mList)
     }
 
     fun printListItems(shoppingList: List<String>) {
