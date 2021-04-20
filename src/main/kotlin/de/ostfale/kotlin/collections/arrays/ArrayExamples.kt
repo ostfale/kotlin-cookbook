@@ -3,7 +3,6 @@ package de.ostfale.kotlin.collections.arrays
 import org.slf4j.LoggerFactory
 import java.math.BigDecimal
 
-
 fun main() {
     val examples = ArrayExamples()
     examples.initArray()
