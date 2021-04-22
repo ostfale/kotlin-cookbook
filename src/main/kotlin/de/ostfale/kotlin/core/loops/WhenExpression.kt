@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.core
+package de.ostfale.kotlin.core.loops
 
 import org.slf4j.LoggerFactory
 import java.math.BigDecimal
