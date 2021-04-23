@@ -5,6 +5,22 @@ fun main() {
     stepsFor()
     listFor()
     indicesFor()
+    breakFor()
+    continueFor()
+}
+
+fun continueFor() {
+    for (i in 1..10) {
+        if (i % 5 == 0) continue
+        println("Continue: #$i")
+    }
+}
+
+fun breakFor() {
+    for (i in 1..10) {
+        if (i > 3) break
+        println("Before break: $i")
+    }
 }
 
 fun indicesFor() {
