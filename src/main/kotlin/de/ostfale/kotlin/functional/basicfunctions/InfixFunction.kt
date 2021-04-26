@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.functional
+package de.ostfale.kotlin.functional.basicfunctions
 
 import org.slf4j.LoggerFactory
 
