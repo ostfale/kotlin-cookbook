@@ -15,7 +15,7 @@ fun main() {
 }
 
 class Duck {
-   // object DuckFactory {
+    // object DuckFactory {
     companion object {
         fun create(): Duck = Duck()
     }

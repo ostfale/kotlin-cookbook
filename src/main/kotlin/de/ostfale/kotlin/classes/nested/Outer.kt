@@ -1,13 +1,8 @@
 package de.ostfale.kotlin.classes.nested
 
-import org.slf4j.LoggerFactory
-
 class Outer {
-
-    private val log = LoggerFactory.getLogger(javaClass)
-
     val x = "This is the outer class...!"
-    val myInner = Inner()
+    private val myInner = Inner()
 
     class Nested {
         val y = "This is the nested class...!!"
@@ -22,12 +17,12 @@ class Outer {
 
     fun printAll() {
         val nested = Outer.Nested()
-        log.info(nested.y)
-        log.info(nested.myFun())
-        val inner = Outer().Inner()
-        log.info(inner.y)
-        log.info(inner.myFun())
-        log.info(inner.getX())
+        println("From nested property: ${nested.y}")
+        println("From nested function: ${nested.myFun()}")
+        println("From inner property: ${myInner.y}")
+        println("From inner property alternative: ${Outer().Inner().y}")
+        println("From inner function: ${myInner.myFun()}")
+        println("From inner func with ext. prop: ${myInner.getX()}")
     }
 }
 
