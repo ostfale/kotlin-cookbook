@@ -59,7 +59,7 @@ class WhenExpression {
         val obj2: Any = 45
 
         when (val something: Any = obj) {
-            is String -> log.info(something.toUpperCase())
+            is String -> log.info(something.uppercase())
             is BigDecimal -> log.info("Found: {}", something.remainder(BigDecimal(10.5)))
             is Int -> log.info("${something - 22}")
         }
@@ -72,7 +72,7 @@ class WhenExpression {
 
         val z = when (val something: Any = obj) {
             is String -> {
-                log.info(something.toUpperCase())
+                log.info(something.uppercase())
             }
             is BigDecimal -> log.info("Found: {}", something.remainder(BigDecimal(10.5)))
             is Int -> log.info("${something - 22}")

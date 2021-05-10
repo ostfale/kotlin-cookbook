@@ -22,6 +22,6 @@ fun defaultLabel(op1: Int, op2: Int, label: String = "The answer is: ") = "$labe
 class Employee(private val firstName: String) {
 
     fun upperCaseFirstName(): String {
-        return firstName.toUpperCase()
+        return firstName.uppercase()
     }
 }

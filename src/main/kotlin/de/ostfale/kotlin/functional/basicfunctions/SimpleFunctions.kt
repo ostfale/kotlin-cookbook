@@ -20,7 +20,7 @@ fun getMinMaxWithPair(data: Array<Int>): Pair<Int, Int> {
 
 fun makePassword(len: Int, nonLetter: Int = 0): String {
     val lower = "abcdefghijklmnopqrstuvwxyz"
-    val letter = lower + lower.toUpperCase()
+    val letter = lower + lower.uppercase()
     val other = "1234567890,.-;:_!#+*%&/="
     val lst = mutableListOf<Char>()
     for (i in 0 until nonLetter) lst += other.random()

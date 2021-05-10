@@ -25,7 +25,7 @@ class Mushroom(val size: Int, val isMagic: Boolean) {
 class DogWithoutType(name_param: String, weight_param: String, breed_param: String) {
     val name = name_param
     var weight = weight_param
-    val breed = breed_param.toUpperCase()
+    val breed = breed_param.uppercase()
     var activities = arrayOf("Walks")
 }
 

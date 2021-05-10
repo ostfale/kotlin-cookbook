@@ -11,10 +11,10 @@ data class Grocery(val name: String, val category: String, val unit: String, val
 fun main() {
     val groceries = GroceryList().groceries
 
-    val highestPrice = groceries.maxBy { it.unitPrice }
-    val minQuantity = groceries.minBy { it.quantity }
-    val sumQuantity = groceries.sumBy { it.quantity }
-    val totalPrice = groceries.sumByDouble { it.quantity * it.unitPrice }
+    val highestPrice = groceries.maxByOrNull { it.unitPrice }
+    val minQuantity = groceries.minByOrNull { it.quantity }
+    val sumQuantity = groceries.sumOf { it.quantity }
+    val totalPrice = groceries.sumOf { it.quantity * it.unitPrice }
 
     println("The grocery with the highest price is: ${highestPrice?.name}")
     println("The grocery with the min quantity is: ${minQuantity?.name}")

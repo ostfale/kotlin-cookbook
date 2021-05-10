@@ -2,10 +2,10 @@ package de.ostfale.kotlin.functional.sam
 
 // https://kotlin.christmas/2020/21
 
-val uppercaseFn: (String) -> String = { it.toUpperCase() }  // simple lambda function
+val uppercaseFn: (String) -> String = { it.uppercase() }  // simple lambda function
 typealias Uppercase = (String) -> String
 
-val uppercaseFn1: Uppercase = { it.toUpperCase() } // using typealias for lambda
+val uppercaseFn1: Uppercase = { it.uppercase() } // using typealias for lambda
 
 // functional interface
 fun interface Suffix {

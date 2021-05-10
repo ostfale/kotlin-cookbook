@@ -23,8 +23,8 @@ fun flatMapEx() {
 
 fun basicEx() {
     val lst = "lorem ipsum".toList()  // List<Char>
-    val upper = lst.map { it.toUpperCase() }
-    val ascii = lst.map { it.toInt() }
+    val upper = lst.map { it.uppercase() }
+    val ascii = lst.map { it.code }
 
     println("Original list: $lst")
     println("Upper Case list: $upper")

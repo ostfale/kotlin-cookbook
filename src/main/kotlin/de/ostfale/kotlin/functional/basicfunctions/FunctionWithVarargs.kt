@@ -4,9 +4,9 @@ class FunctionWithVarargsEx {
 
     private val myArray = arrayOf(4, 5, 6, 7, 8)
 
-    fun <T> valuesToList(vararg vals: T): MutableList<T> {
+    private fun <T> valuesToList(vararg values: T): MutableList<T> {
         val list: MutableList<T> = mutableListOf()
-        for (i in vals) {
+        for (i in values) {
             list.add(i)
         }
         return list
@@ -18,8 +18,8 @@ class FunctionWithVarargsEx {
     }
 
     fun arrayExample() {
-        val mlist = valuesToList(0, *myArray, 2)
-        println("Show spread array example: $mlist")
+        val mList = valuesToList(0, *myArray, 2)
+        println("Show spread array example: $mList")
     }
 }
 

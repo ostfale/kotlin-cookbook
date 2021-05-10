@@ -7,7 +7,7 @@ class DogClassWithGetter(val name: String, var weight: Int, breed_param: String)
     private val log = LoggerFactory.getLogger(javaClass)
 
     var activities = arrayOf("Walks")
-    val breed = breed_param.toUpperCase()
+    val breed = breed_param.uppercase()
 
     // value is calculated using a getter function
     val weightInKgs: Double

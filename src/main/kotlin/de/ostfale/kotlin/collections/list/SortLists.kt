@@ -20,7 +20,7 @@ fun sortWithExample() {
 
 fun sortedByExample() {
     val lst = s.split(" ").toMutableList()
-    lst.sortBy { it.toLowerCase() }
+    lst.sortBy { it.lowercase() }
     println("Show sortedBy with all lowercase: $lst")
     lst.sortBy { it.length }
     println("SortedBy word length: $lst")

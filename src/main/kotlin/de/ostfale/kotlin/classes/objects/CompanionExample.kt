@@ -18,9 +18,9 @@ class SomeClass private constructor(val someString: String) {
         fun justAssign(str: String) = SomeClass(str)
         fun upperOrLowerCase(str: String, lowerCase: Boolean): SomeClass {
             return if (lowerCase) {
-                SomeClass(str.toLowerCase())
+                SomeClass(str.lowercase())
             } else {
-                SomeClass(str.toUpperCase())
+                SomeClass(str.uppercase())
             }
         }
     }

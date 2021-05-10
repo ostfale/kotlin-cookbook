@@ -32,7 +32,7 @@ fun firstPetExample() {
     val petsWithoutTraverse: Try<List<Try<Pet>>> = lines.map { it.map(::toPet) }
     val petsWithTraverse: Try<List<Pet>> = lines.flatMap { Try.traverse(it, ::toPet) }
     val petsWithResultSet: Try<ResultSet<Pet>> = lines.map {
-        it.map(::toPet).asResultSet().map { pet -> pet.copy(name = pet.name.toUpperCase()) }
+        it.map(::toPet).asResultSet().map { pet -> pet.copy(name = pet.name.uppercase()) }
     }
 
     when (petsWithoutTraverse) {

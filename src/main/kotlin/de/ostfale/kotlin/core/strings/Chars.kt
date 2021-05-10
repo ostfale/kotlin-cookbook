@@ -10,12 +10,12 @@ fun charMethods() {
 
     println("\nIs letter: ${c.isLetter()}")
     println("Is lower case: ${c.isLowerCase()}")
-    println("To long : ${c.toLong()}")  // 65
+    println("To long : ${c.code}")  // 65
 }
 
 fun conversions() {
     val c = 35.toChar()
-    val n = 'A'.toInt()
+    val n = 'A'.code
 
     println("Char: show value of 35: $c")
     println("Numeric value of 'A' : $n")

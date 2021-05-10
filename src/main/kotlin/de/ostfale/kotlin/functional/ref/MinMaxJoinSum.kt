@@ -9,7 +9,7 @@ fun main() {
 
 fun sumByLambdaEx() {
     val lst = List(10) { it }
-    val sumQuad = lst.sumBy { it * it }
+    val sumQuad = lst.sumOf { it * it }
     val sumSqrt = lst.sumOf { sqrt(it.toDouble()) }
     println("Sum of list quads: $sumQuad")
     println("Sum of sqrt of list: $sumSqrt")

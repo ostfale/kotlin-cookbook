@@ -6,6 +6,6 @@ fun main() {
 
 fun listToMapEx() {
     val lst = "abcdefg".toList()
-    val map = lst.associateWith { it.toInt() }
+    val map = lst.associateWith { it.code }
     println("Show int value for letter: $map")
 }

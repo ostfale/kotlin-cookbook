@@ -27,7 +27,7 @@ fun testPassword(pw: String): Int {
             break
         }
     }
-    val pwLower = pw.toLowerCase()
+    val pwLower = pw.lowercase()
     result++
     val badWords = listOf("123", "111", "abc", "pass", "word", "qwe", "asd", "love", "login", "admin")
     for (word in badWords) {

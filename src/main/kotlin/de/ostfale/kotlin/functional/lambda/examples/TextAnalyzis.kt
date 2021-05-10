@@ -1,11 +1,11 @@
 package de.ostfale.kotlin.functional.lambda.examples
 
 fun main() {
-    val cleanText = lIpsum.toLowerCase().replace(Regex("[.,]"), "")
+    val cleanText = lIpsum.lowercase().replace(Regex("[.,]"), "")
     val words = cleanText.split(" ")
     println("Number of words in text: ${words.count()}")
 
-    val avLengthOfWords = words.sumBy { it.length } / words.count().toDouble()
+    val avLengthOfWords = words.sumOf { it.length } / words.count().toDouble()
     val anotherAverage = words.map { it.length }.average()
     println("Average length of the words: $avLengthOfWords")
     println("Average length with average function: $anotherAverage")

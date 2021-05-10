@@ -29,16 +29,16 @@ class NullReferences {
 
     fun baseNull() {
         val str: String? = "This isn't null"
-        // str.toUpperCase() // not possible if it can be null
+        // str.uppercase() // not possible if it can be null
 
         if (str != null) {
-            str.toUpperCase()
+            str.uppercase()
         }
 
-        str?.toLowerCase()  // safe call operator
+        str?.lowercase()  // safe call operator
 
         val nullStr: String? = null
-        log.info("What happens with nullStr.toUpperCase() : ${nullStr?.toUpperCase()}") // print 'null'
+        log.info("What happens with nullStr.uppercase() : ${nullStr?.uppercase()}") // print 'null'
     }
 
     fun nullAsPossibleArg() {
