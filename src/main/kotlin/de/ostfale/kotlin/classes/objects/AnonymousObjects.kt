@@ -1,5 +1,15 @@
 package de.ostfale.kotlin.classes.objects
 
+interface Geometry {
+    fun getArea(): Double
+}
+
+val rightTriangle = object : Geometry {
+    val a = 4.5
+    val b = 2.4
+    override fun getArea() = a * b / 2.0
+}
+
 interface SomeInterface {
     fun mustImplement(num: Int): String
 }
