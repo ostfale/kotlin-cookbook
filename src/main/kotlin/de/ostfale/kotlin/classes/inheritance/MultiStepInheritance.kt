@@ -6,5 +6,5 @@ class C(prop1: Int, prop2: Double, val prop3: String) : B(prop1, prop2)
 
 fun main() {
     val obj = C(1, 2.5, "house")
-    println("Result: ${obj.prop1}")
+    println("Result: ${obj.prop1} and ${obj.prop2} and ${obj.prop3}")
 }
