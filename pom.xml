@@ -129,6 +129,14 @@
             <artifactId>arrow-core</artifactId>
             <version>${arrow.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.squareup/kotlinpoet -->
+        <dependency>
+            <groupId>com.squareup</groupId>
+            <artifactId>kotlinpoet</artifactId>
+            <version>1.8.0</version>
+            <scope>runtime</scope>
+        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/org.json/json -->
         <dependency>
