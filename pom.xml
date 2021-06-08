@@ -25,7 +25,7 @@
         <kotlin.code.style>official</kotlin.code.style>
         <kotlin.compiler.jvmTarget>16</kotlin.compiler.jvmTarget>
 
-        <kotlin.version>1.5.10</kotlin.version>
+        <kotlin.version>1.5.0</kotlin.version>
         <serialization.version>1.0.1</serialization.version>
         <arrow.version>0.13.2</arrow.version>
         <logback.version>1.2.3</logback.version>
@@ -116,6 +116,14 @@
     </build>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core -->
+        <dependency>
+            <groupId>org.jetbrains.kotlinx</groupId>
+            <artifactId>kotlinx-coroutines-core</artifactId>
+            <version>1.5.0</version>
+            <type>pom</type>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-serialization-json -->
         <dependency>
             <groupId>org.jetbrains.kotlinx</groupId>
