@@ -16,6 +16,7 @@ class SomeClass private constructor(val someString: String) {
         fun accessingPrivateVar() = "I'm accessing a private var: $privateVar"
 
         fun justAssign(str: String) = SomeClass(str)
+        @OptIn(ExperimentalStdlibApi::class)
         fun upperOrLowerCase(str: String, lowerCase: Boolean): SomeClass {
             return if (lowerCase) {
                 SomeClass(str.lowercase())

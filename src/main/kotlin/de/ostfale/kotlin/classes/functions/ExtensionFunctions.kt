@@ -1,5 +1,6 @@
 package de.ostfale.kotlin.classes.functions
 
+@OptIn(ExperimentalStdlibApi::class)
 fun String.upperFirstAndLast(): String {
     // val upperFirst = this.substring(0, 1).uppercase() + this.substring(1)
     val upperFirst = substring(0, 1).uppercase() + substring(1)

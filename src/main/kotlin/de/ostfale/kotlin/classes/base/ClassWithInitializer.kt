@@ -17,6 +17,7 @@ class DogWithInitializer(private val name: String, var weight: Int, private val 
 
     // runs after first initializer block
     var activities = arrayOf("Walks")
+    @OptIn(ExperimentalStdlibApi::class)
     private val breed = breed_param.uppercase()
 
     // runs after properties above have been created

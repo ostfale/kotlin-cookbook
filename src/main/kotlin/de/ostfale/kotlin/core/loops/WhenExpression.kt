@@ -53,6 +53,7 @@ class WhenExpression {
         }
     }
 
+    @OptIn(ExperimentalStdlibApi::class)
     fun useTypes() {
         val obj: Any = "I am a string"
         val obj1: Any = BigDecimal(25.2)
@@ -65,6 +66,7 @@ class WhenExpression {
         }
     }
 
+    @OptIn(ExperimentalStdlibApi::class)
     fun assignTypeToVariable() {
         val obj: Any = "I am a string"
         val obj1: Any = BigDecimal(25.2)

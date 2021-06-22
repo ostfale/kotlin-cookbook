@@ -27,6 +27,7 @@ fun simpleNullOperations() {
 class NullReferences {
     private val log = LoggerFactory.getLogger(javaClass)
 
+    @OptIn(ExperimentalStdlibApi::class)
     fun baseNull() {
         val str: String? = "This isn't null"
         // str.uppercase() // not possible if it can be null

@@ -2,9 +2,11 @@ package de.ostfale.kotlin.functional.sam
 
 // https://kotlin.christmas/2020/21
 
+@OptIn(ExperimentalStdlibApi::class)
 val uppercaseFn: (String) -> String = { it.uppercase() }  // simple lambda function
 typealias Uppercase = (String) -> String
 
+@OptIn(ExperimentalStdlibApi::class)
 val uppercaseFn1: Uppercase = { it.uppercase() } // using typealias for lambda
 
 // functional interface

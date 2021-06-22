@@ -18,6 +18,7 @@ fun getMinMaxWithPair(data: Array<Int>): Pair<Int, Int> {
     return Pair(min, max)
 }
 
+@OptIn(ExperimentalStdlibApi::class)
 fun makePassword(len: Int, nonLetter: Int = 0): String {
     val lower = "abcdefghijklmnopqrstuvwxyz"
     val letter = lower + lower.uppercase()

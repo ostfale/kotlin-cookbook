@@ -6,7 +6,6 @@ fun main() {
     introAsync()
 }
 
-@OptIn(DelicateCoroutinesApi::class)
 fun introAsync() {
     val longText = "lorem ipsum"
     val result = GlobalScope.async(Dispatchers.IO) {

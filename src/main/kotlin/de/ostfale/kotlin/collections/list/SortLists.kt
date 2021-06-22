@@ -18,6 +18,7 @@ fun sortWithExample() {
     println("Sort with german locale: $lst")
 }
 
+@OptIn(ExperimentalStdlibApi::class)
 fun sortedByExample() {
     val lst = s.split(" ").toMutableList()
     lst.sortBy { it.lowercase() }

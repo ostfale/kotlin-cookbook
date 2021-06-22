@@ -11,6 +11,7 @@ fun main() {
 }
 
 
+@OptIn(ExperimentalStdlibApi::class)
 fun testPassword(pw: String): Int {
     if (pw.length < 8) return 0
     if (pw.all { it.isDigit() }) return 0

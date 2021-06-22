@@ -6,7 +6,6 @@ fun main() {
     joinJobExample()
 }
 
-@OptIn(DelicateCoroutinesApi::class)
 fun joinJobExample() {
     val job = GlobalScope.launch {
         for (i in (1..10)) {

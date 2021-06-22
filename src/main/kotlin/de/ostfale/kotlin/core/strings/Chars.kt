@@ -5,6 +5,7 @@ fun main() {
     charMethods()
 }
 
+@OptIn(ExperimentalStdlibApi::class)
 fun charMethods() {
     val c = 'A'
 
@@ -13,6 +14,7 @@ fun charMethods() {
     println("To long : ${c.code}")  // 65
 }
 
+@OptIn(ExperimentalStdlibApi::class)
 fun conversions() {
     val c = 35.toChar()
     val n = 'A'.code

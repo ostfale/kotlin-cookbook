@@ -6,6 +6,7 @@ class Santa(val title: String, val name: String) {
 
     fun getTitleAndName(): String = "$title $name"
 
+    @OptIn(ExperimentalStdlibApi::class)
     fun laugh(n: Int): String = "ho ".repeat(n).trim()
         .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
 

@@ -21,6 +21,7 @@ fun flatMapEx() {
     println("Flat list: $flat")
 }
 
+@OptIn(ExperimentalStdlibApi::class)
 fun basicEx() {
     val lst = "lorem ipsum".toList()  // List<Char>
     val upper = lst.map { it.uppercase() }

@@ -21,6 +21,7 @@ fun defaultLabel(op1: Int, op2: Int, label: String = "The answer is: ") = "$labe
 
 class Employee(private val firstName: String) {
 
+    @OptIn(ExperimentalStdlibApi::class)
     fun upperCaseFirstName(): String {
         return firstName.uppercase()
     }

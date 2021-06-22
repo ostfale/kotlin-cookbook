@@ -1,11 +1,9 @@
 package de.ostfale.kotlin.async
 
-import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-@OptIn(DelicateCoroutinesApi::class)
 fun main() {
     showScopeInfo()
     GlobalScope.launch {
@@ -16,7 +14,6 @@ fun main() {
     Thread.sleep(2000L)
 }
 
-@OptIn(DelicateCoroutinesApi::class)
 fun showScopeInfo() {
     GlobalScope.launch {
         println("Number of Threads: ${Thread.activeCount()}")

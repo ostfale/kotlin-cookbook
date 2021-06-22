@@ -26,6 +26,7 @@
         <kotlin.compiler.jvmTarget>16</kotlin.compiler.jvmTarget>
 
         <kotlin.version>1.5.10</kotlin.version>
+        <kotlin.db.exposed.version>0.31.1</kotlin.db.exposed.version>
         <serialization.version>1.0.1</serialization.version>
         <arrow.version>0.13.2</arrow.version>
         <logback.version>1.2.3</logback.version>
@@ -116,6 +117,33 @@
     </build>
 
     <dependencies>
+        <!-- Kotlin DB Lib Exposed -->
+        <dependency>
+            <groupId>org.jetbrains.exposed</groupId>
+            <artifactId>exposed-core</artifactId>
+            <version>${kotlin.db.exposed.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.exposed</groupId>
+            <artifactId>exposed-dao</artifactId>
+            <version>${kotlin.db.exposed.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.exposed</groupId>
+            <artifactId>exposed-jdbc</artifactId>
+            <version>${kotlin.db.exposed.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.exposed</groupId>
+            <artifactId>exposed-java-time</artifactId>
+            <version>0.32.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>3.34.0</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core -->
         <dependency>
             <groupId>org.jetbrains.kotlinx</groupId>

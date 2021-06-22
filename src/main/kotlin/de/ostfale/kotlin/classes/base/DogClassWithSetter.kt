@@ -7,6 +7,7 @@ class DogClassWithSetter(val name: String, weight_param: Int, breed_param: Strin
     private val log = LoggerFactory.getLogger(javaClass)
 
     var activities = arrayOf("Walk")
+    @OptIn(ExperimentalStdlibApi::class)
     val breed = breed_param.uppercase()
 
     // explicit use of a setter

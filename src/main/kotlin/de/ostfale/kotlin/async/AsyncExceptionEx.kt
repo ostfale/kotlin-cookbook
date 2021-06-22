@@ -2,7 +2,6 @@ package de.ostfale.kotlin.async
 
 import kotlinx.coroutines.*
 
-@OptIn(DelicateCoroutinesApi::class)
 fun main() {
     val results = mutableListOf<Deferred<Int>>()
     runBlocking {

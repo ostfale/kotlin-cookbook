@@ -24,6 +24,7 @@ fun simpleErrorHandlingWithTry() {
     }
 }
 
+@OptIn(ExperimentalStdlibApi::class)
 fun firstPetExample() {
     val lines = Try {
         ResourceReader().readFileFromResources("./my-pet.csv").readLines().map { it.split(',') }
