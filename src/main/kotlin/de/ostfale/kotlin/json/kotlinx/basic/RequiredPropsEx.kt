@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.json.kotlinx.endecode
+package de.ostfale.kotlin.json.kotlinx.basic
 
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Required

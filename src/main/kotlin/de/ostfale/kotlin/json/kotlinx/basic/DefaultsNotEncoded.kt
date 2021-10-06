@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.json.kotlinx.endecode
+package de.ostfale.kotlin.json.kotlinx.basic
 
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
@@ -8,14 +8,14 @@ import kotlinx.serialization.json.Json
 // https://github.com/Kotlin/kotlinx.serialization/blob/master/docs/basic-serialization.md#optional-property-initializer-call
 
 /**
- * Nullable properties are natively supported by Kotlin Serialization. This example does not encode null in JSON
- * because Defaults are not encoded.
+ * Default values are not encoded by default in JSON. This behavior is motivated by the fact that in most real-life
+ * scenarios such configuration reduces visual clutter, and saves the amount of data being serialized.
  */
 @Serializable
-class NullableProps(val name: String, val renamedTo: String? = null)
+data class DefaultsNotEncoded(val name: String, val language: String = "Kotlin")
 
 @OptIn(ExperimentalSerializationApi::class)
 fun main() {
-    val data = NullableProps("kotlinx.serialization")
+    val data = DefaultsNotEncoded("kotlinx.serialization")
     println(Json.encodeToString(data))
 }
