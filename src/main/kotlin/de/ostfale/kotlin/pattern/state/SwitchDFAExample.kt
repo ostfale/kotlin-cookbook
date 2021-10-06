@@ -6,6 +6,9 @@ object s1 : State()
 
 val a = Input("press")
 
+// Link: part 1: https://sp4ghetticode.medium.com/finite-state-machines-in-kotlin-part-1-57e68d54d93b
+// Link: part 2: https://sp4ghetticode.medium.com/writing-finite-state-machines-in-kotlin-part-2-delta-hat-3f2ae5eb42bd
+
 data class Input(val value: String)
 data class DFA(
     val states: Set<State>,

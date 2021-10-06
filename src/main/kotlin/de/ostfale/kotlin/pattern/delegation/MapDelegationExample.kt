@@ -2,7 +2,6 @@ package de.ostfale.kotlin.pattern.delegation
 
 import kotlin.reflect.KProperty
 
-
 class PoliteStringMap(private val dataSource: MutableMap<String, Any>) {
     operator fun getValue(thisRef: Any?, property: KProperty<*>) =
         (dataSource[property.name] as? String)?.replace("stupid", "s*****") ?: ""
