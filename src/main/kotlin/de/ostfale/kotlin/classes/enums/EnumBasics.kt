@@ -1,5 +1,7 @@
 package de.ostfale.kotlin.classes.enums
 
+// https://typealias.com/start/kotlin-enum-classes/
+
 enum class PetTypeBasic(val type: String) {
     Cat("Cat"), Dog("Dog"), Ferret("Ferret");
 

@@ -1,9 +1,5 @@
 package de.ostfale.kotlin.functional.sealed
 
-import arrow.core.Either
-import arrow.core.left
-import arrow.core.right
-
 // Link: https://medium.com/swlh/value-based-classes-and-error-handling-in-kotlin-3f14727c0565
 
 /**
@@ -40,7 +36,7 @@ data class PasswordWithExceptions private constructor(val value: String) {
  * our code and will force us (unless explicitly told not to) to handle all the error scenarios wherever we instantiate
  * this class.
  */
-data class PasswordAlgebraicDataType private constructor(val value: String) {
+/*data class PasswordAlgebraicDataType private constructor(val value: String) {
     companion object {
         fun of(value: String): Either<Violation, PasswordAlgebraicDataType> {
             return when {
@@ -50,7 +46,7 @@ data class PasswordAlgebraicDataType private constructor(val value: String) {
             }
         }
     }
-}
+}*/
 
 
 /**
@@ -59,7 +55,7 @@ data class PasswordAlgebraicDataType private constructor(val value: String) {
  * fix it, while keeping backward-compatibility.
  */
 // @NoCopy   -> needs a gradle plugin https://github.com/AhmedMourad0/no-copy/
-data class Password constructor(val value: String) {
+/*data class Password constructor(val value: String) {
     companion object {
         @ExperimentalStdlibApi
         fun of(value: String): Either<List<Violation>, Password> {
@@ -74,7 +70,7 @@ data class Password constructor(val value: String) {
             return if (violations.isEmpty()) Password(value).right() else violations.left()
         }
     }
-}
+}*/
 
 @ExperimentalStdlibApi
 fun main() {
