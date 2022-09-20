@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.pattern.factory
+package de.ostfale.kotlin.pattern.structural.factory
 
 /**
  * With private constructor only the static factory method is available

@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.pattern.builder
+package de.ostfale.kotlin.pattern.structural.builder
 
 class Car(
     val model: String?,

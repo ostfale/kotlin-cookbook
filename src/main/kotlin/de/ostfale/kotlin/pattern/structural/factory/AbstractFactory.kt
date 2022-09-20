@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.pattern.factory
+package de.ostfale.kotlin.pattern.structural.factory
 
 /**
  * An abstract factory is a class which wraps multiple factory methods

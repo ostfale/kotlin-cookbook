@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.pattern.decorator
+package de.ostfale.kotlin.pattern.structural.decorator
 
 interface StarTrekRepository {
     // use set and get to have operator overloading

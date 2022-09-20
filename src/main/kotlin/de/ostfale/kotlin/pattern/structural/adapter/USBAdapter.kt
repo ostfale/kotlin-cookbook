@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.pattern.adapter
+package de.ostfale.kotlin.pattern.structural.adapter
 
 interface USPlug {
     val hasPower: Int

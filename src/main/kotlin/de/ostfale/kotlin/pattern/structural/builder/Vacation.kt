@@ -1,6 +1,4 @@
-package de.ostfale.kotlin.pattern.builder
-
-import org.slf4j.LoggerFactory
+package de.ostfale.kotlin.pattern.structural.builder
 
 class Vacation(builder: VacationBuilder) {
 
@@ -19,21 +17,9 @@ class Vacation(builder: VacationBuilder) {
         var excursions: List<String> = listOf()
         var cuisine: List<String> = listOf()
 
-        fun withHotel(value: String): VacationBuilder {
-            this.hotel = value
-            return this
-        }
-
-        fun withExcursions(value: List<String>): VacationBuilder {
-            this.excursions = value
-            return this
-        }
-
-        fun withCuisine(value: List<String>): VacationBuilder {
-            this.cuisine = value
-            return this
-        }
-
+        fun withHotel(value: String) = apply { this.hotel = value }
+        fun withExcursions(value: List<String>) = apply { this.excursions = value }
+        fun withCuisine(value: List<String>) = apply { this.cuisine = value }
         fun build(): Vacation = Vacation(this)
     }
 
