@@ -3,7 +3,6 @@ package de.ostfale.kotlin.functional.lambda
 import org.slf4j.LoggerFactory
 import kotlin.math.sqrt
 
-
 /**
  * Examples for Lambda expressions
  * Declaration: <br>
@@ -15,16 +14,14 @@ import kotlin.math.sqrt
  *
  *  @author : Uwe Sauerbrei
  */
-
-
 fun main() {
     val lambdaExamples = LambdaExamples()
     lambdaExamples.lambdaWithOneArg()
     lambdaExamples.lambdaWithTwoArgs()
+    lambdaExamples.printAllDwarfs()
 }
 
 class LambdaExamples {
-
     private val log = LoggerFactory.getLogger(javaClass)
 
     fun lambdaWithOneArg() {
@@ -45,4 +42,15 @@ class LambdaExamples {
         log.info("Lambda with two args returning an int: {}", multiplication(6, 7))
         log.info("Lambda with two args returning a double: {}", multiplicationRetDouble(6, 7))
     }
+
+    fun printAllDwarfs() {
+        val dwarfList = listOf("Dwalin", "Balin", "Thorin")
+        for (d in dwarfList) {
+            log.info("Dwarf: $d")
+        }
+        dwarfList.forEach { it -> log.info("It-Lambda-Dwarf: $it") }
+        dwarfList.forEach { log.info("Lambda-Dwarf: $it") }
+        dwarfList.forEach(::println)
+    }
 }
+

@@ -3,7 +3,6 @@ package de.ostfale.kotlin.functional.hiorfu
 import org.slf4j.LoggerFactory
 
 class ForEachExample : GroceryList() {
-
     private val log = LoggerFactory.getLogger(javaClass)
 
     fun printGroceryNames() {

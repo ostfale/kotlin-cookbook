@@ -1,6 +1,5 @@
 package de.ostfale.kotlin.functional.lambda.examples
 
-@OptIn(ExperimentalStdlibApi::class)
 fun main() {
     val cleanText = lIpsum.lowercase().replace(Regex("[.,]"), "")
     val words = cleanText.split(" ")
