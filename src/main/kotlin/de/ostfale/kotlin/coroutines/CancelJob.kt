@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.async
+package de.ostfale.kotlin.coroutines
 
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
