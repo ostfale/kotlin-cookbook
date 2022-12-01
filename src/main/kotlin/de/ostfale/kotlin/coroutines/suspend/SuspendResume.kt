@@ -10,6 +10,7 @@ import kotlin.coroutines.suspendCoroutine
 
 suspend fun resumeInstantly() {
     print("RESUME INSTANTLY :: Before -> ")
+    // kotlin library function
     suspendCoroutine<Unit> { continuation -> continuation.resume(Unit) }
     println("After")
 }
