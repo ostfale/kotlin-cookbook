@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.coroutines
+package de.ostfale.kotlin.coroutines.suspend
 
 import kotlinx.coroutines.delay
 import java.util.concurrent.Executors

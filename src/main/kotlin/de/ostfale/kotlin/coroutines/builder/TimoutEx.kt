@@ -1,4 +1,4 @@
-package de.ostfale.kotlin.coroutines
+package de.ostfale.kotlin.coroutines.builder
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking

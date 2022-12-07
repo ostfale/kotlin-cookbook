@@ -1,9 +1,8 @@
-package de.ostfale.kotlin.coroutines
+package de.ostfale.kotlin.coroutines.builder
 
 import kotlinx.coroutines.*
 
 class CancelExample {
-
     // check for cancel happens between state changes (caused by yield())
     val cancellable = GlobalScope.launch {
         try {
