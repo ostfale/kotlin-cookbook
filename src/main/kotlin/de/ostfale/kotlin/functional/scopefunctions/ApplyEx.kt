@@ -1,7 +1,5 @@
 package de.ostfale.kotlin.functional.scopefunctions
 
-import de.ostfale.kotlin.datetime.addSubtractTime
-
 fun main() {
     simpleApplyEx()
 }

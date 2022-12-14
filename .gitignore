@@ -1,3 +1,5 @@
 .idea/*
 /mainModule.iml
 target/*
+/src/main/resources/drawio/.$CoroutineOverview.drawio.bkp
+/src/main/resources/drawio/.$CoroutineOverview.drawio.dtmp
