@@ -7,12 +7,13 @@ import kotlin.time.ExperimentalTime
 
 // https://lengrand.fr/measuring-time-and-durations-in-kotlin/
 
-val tenDays: Duration = Duration.days(10)
+/*val tenDays: Duration = Duration.days(10)
+@OptIn(ExperimentalTime::class)
 val fiveNanoSeconds = Duration.nanoseconds(5)
 
 fun main() {
     println("These are ten days and five nanoseconds: ${tenDays + fiveNanoSeconds}")
-}
+}*/
 
 
 fun <A> findFirst(xs: Array<A>, p: (A) -> Boolean): Int {
